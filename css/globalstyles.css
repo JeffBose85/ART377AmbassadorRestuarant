@@ -1,0 +1,66 @@
+@font-face {
+    font-family: OldLondonAlternate;
+    src: url('../assets/OldLondonAlternate.ttf');
+}
+
+@import url("https://use.typekit.net/hjt1gxe.css");
+
+
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Komet', sans-serif, serif;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    color:white;
+    height: 6.7vw;
+    display: flex;
+}
+
+.title {
+    font-family: OldLondonAlternate, 'Komet', sans-serif, serif;
+    font-size: 5vw;
+    display:flex;
+    margin-left: 1vw;
+}
+
+.subtitleTHE {
+    font-size: 2vw;
+    position: absolute;
+    left: 4.3vw;
+}
+
+.subtitleRNB {
+    font-size: 2vw;
+    position: absolute;
+    left: 8vw;
+    top:4.2vw;
+}
+
+nav {
+    display:flex;
+    position: absolute;
+    right:0;
+    top:25%;
+    
+}
+
+nav > a {
+    color:blue;
+}
+
+
