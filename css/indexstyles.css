@@ -1,12 +1,92 @@
 
-html {
-    box-sizing:border-box;
+.topsection {
+    height:40vw;
+    background-color: var(--lightgray);
+
+    display:flex;
 }
 
-*, *:before, *:after {
-    box-sizing:inherit;
+#indeximg {
+    max-width: 53%;
+    margin-top:2.2vw;
+    margin-left:2.2vw;
+    margin-bottom: 2.2vw;
+
+    border-radius: 1vw;
 }
 
-img {
-    max-width: 100%;
+.reviews {
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 1vw;
+    margin:auto;
 }
+
+.reviewcard {
+    position: relative;
+    width:15vw;
+    height:17vw;
+    padding: .5vw;
+
+    background-color: white;
+    border-radius: 1vw;
+    filter: drop-shadow(3px 3px 3px var(--dropshadow));
+}
+
+.review {
+    font-size: 1.1vw;
+}
+
+.reviewer {
+    position: absolute;
+    
+    font-size: 1.1vw;
+    right: .8vw;
+    bottom: .2vw;
+}
+
+.main {
+    padding: 7vw 13vw 7vw 13vw;
+    display:grid;
+    grid-template-columns: auto 2vw auto;
+    font-size: 1vw;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+.history {
+    width:40vw;
+    margin: auto;
+}
+
+.seemorehistory {
+    float:right;
+    margin: 0;
+}
+
+.details {
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+
+.detailsection {
+    display:grid;
+    margin: auto;
+    grid-template-columns: 3vw auto;
+}
+
+.detailinfo {
+    padding-top: .5vw;
+}
+
+.icon {
+    top:0;
+    max-width: 85%;
+    margin:auto;
+}
+
+
+

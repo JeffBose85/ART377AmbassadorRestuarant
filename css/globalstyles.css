@@ -5,6 +5,12 @@
 
 @import url("https://use.typekit.net/hjt1gxe.css");
 
+:root {
+    --gray: #4C4C4C;
+    --darkgray: #343434;
+    --lightgray: #F3F3F3;
+    --dropshadow: #d6d6d6;
+}
 
 html {
     box-sizing:border-box;
@@ -21,46 +27,107 @@ img {
 body {
     font-family: 'Komet', sans-serif, serif;
     margin: 0;
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width:.4vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: maroon;
+    border-radius: 1vw;
 }
 
 header {
     position: relative;
     background-color: black;
     color:white;
-    height: 6.7vw;
+    height: 5.2vw;
     display: flex;
+    position: sticky;
+    top:0;
+    z-index: 1;
 }
 
 .title {
     font-family: OldLondonAlternate, 'Komet', sans-serif, serif;
-    font-size: 5vw;
+    font-size: 4vw;
     display:flex;
     margin-left: 1vw;
 }
 
 .subtitleTHE {
-    font-size: 2vw;
+    font-size: 1.5vw;
     position: absolute;
-    left: 4.3vw;
+    left: 3.7vw;
 }
 
 .subtitleRNB {
-    font-size: 2vw;
+    font-size: 1.5vw;
     position: absolute;
     left: 8vw;
-    top:4.2vw;
+    top:3.4vw;
 }
 
 nav {
     display:flex;
     position: absolute;
-    right:0;
+    right:6.8vw;
     top:25%;
     
 }
 
 nav > a {
-    color:blue;
+    color:white;
+    text-decoration: none;
+    width:auto;
+
+    text-align: right;
+    font-size: 2vw;
+    padding: .2vw 2vw .2vw 2vw;
+
+    border-right: var(--darkgray) 2px solid;
 }
+
+nav > a:hover {
+    background-color: var(--gray);
+}
+
+
+footer {
+    position: relative;
+    height: 10vw;
+    padding-top: 1vw;
+    background-color: var(--lightgray);
+}
+
+.footertitle {
+    font-family: OldLondonAlternate, 'Komet', sans-serif, serif;
+    font-size: 4vw;
+}
+
+.footerinfo {
+    text-align: center;
+    font-size: 1vw;
+}
+
+.footernav {
+    position: absolute;
+    right: 1vw;
+    bottom: 1vw;
+    line-height: 2vw;
+    text-align: right;
+    font-size: 1vw;
+}
+
+.footernav > a {
+    color:black;
+}
+
 
 
