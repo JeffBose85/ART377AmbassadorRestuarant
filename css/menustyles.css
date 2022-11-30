@@ -24,20 +24,13 @@
 }
 
 .menunav {
-    position: absolute;
+    position: sticky;
     display: flex;
-    bottom: 0;
+    top: 5vw;
     left:15%;
     width:70%;
     border-radius: 1vw 1vw 0 0;
     background-color: var(--lightgray);
-}
-
-@media (min-height:15vw) {
-    .menunav {
-        position: sticky;
-        top: 5vw;
-    }
 }
 
 .menunavbackground {
