@@ -1,0 +1,74 @@
+
+.topsection {
+    background-image: url(../images/pizza.jpg);
+}
+
+.main {
+    height: 40vw;
+
+    padding: 5vw 10vw 15vw 10vw;
+    display:grid;
+    grid-template-columns: 50vw auto;
+}
+
+h1 {
+    font-size:3vw;
+    font-weight: 800;
+}
+
+.options {
+    font-size:1vw;
+}
+
+.options > h2 {
+    font-size:1.5vw;
+    margin-bottom: 0;
+}
+
+.optionseperator {
+    display:grid;
+    grid-template-columns: 20vw 5vw 20vw;
+    margin-bottom: 1vw;
+    padding-top: 1vw;
+}
+
+.optionseperator > hr {
+    border:none;
+    border-bottom: 1px black solid;
+    width:20vw;
+    
+}
+
+.optionseperator > h3 {
+    margin:0;
+    text-align: center;
+}
+
+.op2sub {
+    font-size:.8vw;
+    font-style: italic;
+}
+
+.instructionsection > h1 {
+    margin-bottom:0;
+}
+
+.instructions {
+    display:grid;
+    grid-template-columns: auto auto;
+    row-gap: 1.5vw;
+    background-color: var(--lightgray);
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+.instructions > h2 {
+    margin:0;
+    margin-right: 1vw;
+    font-size:2vw;
+}
+
+.instructions > p {
+    padding-top: .4vw;
+    font-size: 1.5vw;
+}

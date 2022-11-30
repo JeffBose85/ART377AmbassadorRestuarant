@@ -1,0 +1,65 @@
+
+:root {
+    --menuseperator: #E5E5E5;
+}
+
+.topsection {
+    background-image: url(../images/pasta.jpg);
+}
+
+.comment {
+    font-size:1vw;
+    font-style: italic;
+}
+
+.seperator {
+    position: relative;
+    height:15vw;
+    background-color: white;
+}
+
+.seperator > .comment {
+    float:right;
+    padding: .5vw .5vw 0 0;
+}
+
+.menunav {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left:15%;
+    width:70%;
+    border-radius: 1vw 1vw 0 0;
+    background-color: var(--lightgray);
+}
+
+@media (min-height:15vw) {
+    .menunav {
+        position: sticky;
+        top: 5vw;
+    }
+}
+
+.menunavbackground {
+    position: absolute;
+    width:100%;
+    background-color: white;
+    height:3.7vw;
+}
+
+.menunav > h1 {
+    margin:0;
+    padding-left:.5vw;
+    padding-right:.5vw;
+    font-size:3vw;
+    border-right: 3px var(--menuseperator) solid;
+}
+
+.menunav > h1:hover {
+    background-color: var(--menuseperator);
+}
+
+.main {
+    height:100vw;
+    background-color: var(--lightgray);
+}

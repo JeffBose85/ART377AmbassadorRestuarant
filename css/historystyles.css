@@ -1,0 +1,28 @@
+
+.topsection {
+    background-image: url(../images/gnomes.png);
+}
+
+.main {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    padding: 10vw 0vw 10vw 5vw;
+}
+
+.history {
+    width:40vw;
+    font-size: 1vw;
+}
+
+.poem {
+    float:right;
+    width:49vw;
+    font-size: 1vw;
+    text-align: center;
+    line-height: 1.5vw;
+    font-style: italic;
+}
+
+.poem > h1 {
+    font-size:1.3vw;
+}
