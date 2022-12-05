@@ -1,6 +1,7 @@
 
 :root {
     --menuseperator: #E5E5E5;
+    --sectionsubtitle: #707070;
 }
 
 .topsection {
@@ -31,6 +32,7 @@
     width:70%;
     border-radius: 1vw 1vw 0 0;
     background-color: var(--lightgray);
+    z-index: 1;
 }
 
 .menunavbackground {
@@ -53,6 +55,155 @@
 }
 
 .main {
-    height:100vw;
+    padding-bottom: 10vw;
     background-color: var(--lightgray);
 }
+
+.pizza {
+    display:grid;
+    width:90%;
+    margin:auto;
+    margin-top:10vw;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 2vw;
+}
+
+.sectionheader {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.sectiontitle {
+    font-size: 3vw;
+    font-weight: 900;
+    margin:0;
+}
+
+.sectionsubtitle {
+    font-size: 1.8vw;
+    color:var(--sectionsubtitle);
+    margin:0;
+    margin-bottom: 1vw;
+    font-weight: 500;
+}
+
+.foodcard {
+    position: relative;
+    width:20vw;
+    height:25vw;
+    margin:auto;
+    font-size: 1vw;
+    background-color: white;
+    border-radius: 1vw;
+    filter: drop-shadow(3px 3px 3px var(--dropshadow));
+}
+
+.cardtitle {
+    text-align: center;
+    font-size: 1.5vw;
+    color:white;
+    background-color: var(--darkgray);
+    width:100%;
+    height:2.2vw;
+    border-radius: 1vw 1vw 0 0;
+    margin-top: -.1vw;
+}
+
+.carddesc {
+    padding:1vw;
+    font-size: 1.2vw;
+}
+
+.prices {
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    text-align: center;
+    font-size:2vw;
+    border-top: var(--lightgray) 4px solid;
+    display:grid;
+}
+
+.prices > span {
+    padding: 1vw 0 1vw 0;
+}
+
+.prices > span:hover {
+    background-color: var(--lightgray);
+}
+
+.pr1 {
+
+}
+
+.pr2 {
+    grid-template-columns: auto auto;
+}
+
+.pr3 {
+    grid-template-columns: auto auto auto;
+}
+
+.byopcard {
+    background-color: white;
+    filter: drop-shadow(3px 3px 3px var(--dropshadow));
+    grid-column: 2 / 4;
+    width:40vw;
+    height:25vw;
+    margin:auto;
+    border-radius: 1vw;
+    font-size: 1vw;
+
+}
+
+.basiccheese {
+    text-align: center;
+    font-size: 1.3vw;
+    margin: 1vw 0 1vw 0;
+}
+
+.ingredients {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+.ingredients > div >h3 {
+    margin:0;
+    border-bottom: black 1px solid;
+    border-top: black 1px solid;
+}
+
+.takenbakecard {
+    grid-column: 1 / 3;
+    width:40vw;
+    background-color: white;
+    margin:auto;
+    padding: 1vw;
+    text-align: center;
+
+    border-radius: 1vw;
+    filter: drop-shadow(3px 3px 3px var(--dropshadow));
+
+    text-decoration: none;
+    color:black;
+}
+
+.takenbakecard:hover {
+    background-color: var(--lightgray);
+}
+
+.takenbakecard > h1 {
+    font-size: 2vw;
+    margin:0;
+}
+
+.takenbakecard > h2 {
+    font-size: 1.5vw;
+    margin:0;
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
