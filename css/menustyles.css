@@ -59,7 +59,7 @@
     background-color: var(--lightgray);
 }
 
-.pizza {
+.menusection {
     display:grid;
     width:90%;
     margin:auto;
@@ -71,6 +71,7 @@
 .sectionheader {
     grid-column-start: 1;
     grid-column-end: 5;
+    margin-left:1.5vw;
 }
 
 .sectiontitle {
@@ -80,10 +81,9 @@
 }
 
 .sectionsubtitle {
-    font-size: 1.8vw;
+    font-size: 1vw;
     color:var(--sectionsubtitle);
     margin:0;
-    margin-bottom: 1vw;
     font-weight: 500;
 }
 
