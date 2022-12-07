@@ -119,6 +119,7 @@
 .fooddesc > span.comment {
     position: absolute;
     font-size: .8vw;
+    text-align: right;
     bottom: .2vw;
     right: .5vw;
 }
@@ -266,6 +267,10 @@
 
 .pastahalfcarddesc > span.price {
     float: right;
+}
+
+.centered {
+    text-align: center;
 }
 
 .dressings {
