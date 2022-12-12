@@ -46,8 +46,6 @@
 
 .menunav > h1 {
     margin:0;
-    padding-left:.5vw;
-    padding-right:.5vw;
     font-size:3vw;
     border-right: 3px var(--menuseperator) solid;
 }
@@ -55,6 +53,13 @@
 .menunav > h1 > a {
     text-decoration: none;
     color:black;
+    padding-left:.5vw;
+    padding-right:.5vw;
+}
+
+.menunav > h1 > a:active {
+    background-color: maroon;
+    color:white;
 }
 
 .menunav > h1:hover {

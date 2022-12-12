@@ -113,6 +113,10 @@ nav > a:hover {
     background-color: var(--gray);
 }
 
+nav > a:active {
+    background-color: maroon;
+}
+
 
 footer {
     position: relative;
