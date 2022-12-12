@@ -30,8 +30,8 @@
     position: sticky;
     display: flex;
     top: 5vw;
-    left:15%;
-    width:70%;
+    left:15vw;
+    width:69vw;
     border-radius: 1vw 1vw 0 0;
     background-color: var(--lightgray);
     z-index: 1;
@@ -44,27 +44,72 @@
     height:3.7vw;
 }
 
-.menunav > h1 {
-    margin:0;
-    font-size:3vw;
-    border-right: 3px var(--menuseperator) solid;
-}
+.menunav > a {
+    margin:auto;
+    height:3.7vw;
 
-.menunav > h1 > a {
     text-decoration: none;
     color:black;
-    padding-left:.5vw;
-    padding-right:.5vw;
+    font-size: 2.7vw;
+    font-weight: 800;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin:0;
+
+    border-left: 3px var(--menuseperator) solid;
 }
 
-.menunav > h1 > a:active {
+.menunav > a.noborder {
+    border:none;
+}
+
+.menunav > a.radiusleft {
+    border-radius: 1vw 0 0 0 ;
+}
+
+.menunav > a.radiusright {
+    border-radius: 0 1vw 0 0;
+}
+
+.menunav > a:hover {
+    background-color: var(--menuseperator);
+}
+
+.menunav > a:active {
     background-color: maroon;
     color:white;
 }
 
-.menunav > h1:hover {
-    background-color: var(--menuseperator);
+.menunavstuck {
+    background-color: black;
+    border-radius: 0 0 1vw 1vw;
+    
 }
+
+.menunavstuck > a {
+    color:white;
+    border-left: 3px var(--darkgray) solid;
+
+}
+
+.menunavstuck > a.radiusleft {
+    border-radius: 0 0 0 1vw;
+}
+
+.menunavstuck > a.radiusright {
+    border-radius: 0 0 1vw 0;
+}
+
+.menunavstuck > a:hover {
+    background-color: var(--darkgray);
+}
+
+.menunavstuck > a:active {
+    background-color: maroon;
+    color:white;
+}
+
+
 
 .main {
     padding-bottom: 10vw;

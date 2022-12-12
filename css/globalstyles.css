@@ -52,7 +52,6 @@ header {
     top:0;
     z-index: 2;
 
-    filter: drop-shadow(1px 3px 3px black);
 }
 
 .navtitle {
